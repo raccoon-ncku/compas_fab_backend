@@ -1,0 +1,8 @@
+<launch>
+  <!-- moveit -->
+  <include file="$(find rccn_east_robot_kvp_moveit_config)/launch/demo.launch"/>
+  <!-- File Server -->
+  <include file="$(find file_server)/launch/file_server.launch"/>
+  <!-- ROS GUI Bridge -->
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+</launch>
